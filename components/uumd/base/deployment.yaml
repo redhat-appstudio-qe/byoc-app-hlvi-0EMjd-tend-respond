@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: uumd
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-yoai-tenant/byoc-app-hlvi/uumd@sha256:d39fc516f2a1a9a96477a5e1f92638e221a06d06ffa5d720592cc6ca218df604
         name: my-java-quarkus
         ports:
         - containerPort: 8081
