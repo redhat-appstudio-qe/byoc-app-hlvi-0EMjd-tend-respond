@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: uumd
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-yoai-tenant/byoc-app-hlvi/uumd@sha256:d39fc516f2a1a9a96477a5e1f92638e221a06d06ffa5d720592cc6ca218df604
+        name: my-java-quarkus
+        resources: {}
+status: {}
